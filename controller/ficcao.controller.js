@@ -10,6 +10,7 @@ exports.getAll = async (req,res) => {
 }
 
 exports.getId = async (req,res) => {
+    const id = req.params.id;
     if(id.length != 24){
         res.status(400).json({message: "ERROR: O id precisa ter 24 caracteres"});
         return;
@@ -48,6 +49,8 @@ exports.postAdd = async (req,res) => {
 }
 
 exports.putUpdate = async (req,res) => {
+    const requisicao = req.body;
+    const id = req.params.id;
     if(id.length != 24){
         res.status(400).json({message: "ERROR: O id precisa ter 24 caracteres"});
         return;
@@ -77,6 +80,7 @@ exports.putUpdate = async (req,res) => {
 }
 
 exports.delDelete = async (req,res) => {
+    const id = req.params.id;
     if(id.length != 24){
         res.status(400).json({message: "ERROR: O id precisa ter 24 caracteres"});
         return;

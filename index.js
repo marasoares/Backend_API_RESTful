@@ -15,19 +15,19 @@ app.get('/', (req,res) => {
     res.status(200).json({message:"API Livros ok"});
 });
 
-const InfantisRouter = require("./routers/infantis.routes");
+const InfantisRouter = require("./routers/infantis.routers");
 app.use("/infantis", InfantisRouter);
 
-const FiccaoRouter = require("./routers/ficcao.routes");
+const FiccaoRouter = require("./routers/ficcao.routers");
 app.use("/ficcao", FiccaoRouter);
 
-const PoliciaisRouter = require("./routers/policiais.routes");
+const PoliciaisRouter = require("./routers/policiais.routers");
 app.use("/policiais", PoliciaisRouter);
 
-const DramasRouter = require("./routers/dramas.routes");
+const DramasRouter = require("./routers/dramas.routers");
 app.use("/dramas", DramasRouter);
 
-const JuridicosRouter = require("./routers/juridicos.routes");
+const JuridicosRouter = require("./routers/juridicos.routers");
 app.use("/juridicos", JuridicosRouter);
 
 app.listen(process.env.PORT, () => {
