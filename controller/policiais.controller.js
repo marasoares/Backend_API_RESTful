@@ -24,6 +24,7 @@ exports.getId = async (req,res) => {
 }
 
 exports.postAdd = async (req,res) => {
+    const requisicao = req.body;
     if(!requisicao.nome){
         res.status(400).json({message: "Nome do livro não foi inserido na requisicao"});
         return;
