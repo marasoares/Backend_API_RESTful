@@ -1,4 +1,4 @@
-### API RESTful - Integração Backend e Frontend, utilizando NodeJS, Express, Mongo Atlas e Deploy no Heroku
+### API RESTful - Integração Backend e Frontend, utilizando NodeJS + Express + MongoDB + Deploy no Heroku
 
 API criada para organização de `Livros` por categoria, sendo utilizadas, como exemplo, as categorias: 
 
@@ -16,7 +16,7 @@ API criada para organização de `Livros` por categoria, sendo utilizadas, como 
 
 - `GET/dramas/listAll` 
 
-  Utilizada para listar todos os objetos inseridos no Mongo Atlas, retorna status code 200 quando a rota está conectada ao banco corretamente:
+  Utilizada para listar todos os objetos inseridos no MongoDB, retorna status code 200 quando a rota está conectada ao banco corretamente:
 
 - `GET/dramas/listId`
 
@@ -24,7 +24,7 @@ API criada para organização de `Livros` por categoria, sendo utilizadas, como 
 
 - `POST/dramas/add`
 
-  Utilizada para adicionar um novo objeto no Mongo Atlas, devendo seguir o padrão de  dados abaixo, como exemplo, onde realizamos a validação de cada informação inserida pelo usuário. Em caso de erro, retorna status code 400.
+  Utilizada para adicionar um novo objeto no MongoDB, devendo seguir o padrão de  dados abaixo, como exemplo, onde realizamos a validação de cada informação inserida pelo usuário. Em caso de erro, retorna status code 400.
 
 ```javascript
 {
@@ -98,14 +98,6 @@ Para cada categoria de livros, utilizamos o mesmo modelo de dados a serem inseri
 - `POST/policiais/add`
 - `PUT/policiais/update/:id`
 - `DELETE/policiais/delete/:id`
-
-
-
-Projeto "startado" pelo comando `node index`, definido no package.json.
-
-Arquivo .env criado e adicionado ao gitgnore para segurança dos dados do programa.
-
-Licença GNU - General Public License v3.0.
 
 
 
